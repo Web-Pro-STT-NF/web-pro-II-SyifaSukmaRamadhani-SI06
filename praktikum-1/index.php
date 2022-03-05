@@ -15,7 +15,7 @@ echo "<br>Weight : " . $weight;
 
 //variabel constant = ketika dibuat nilainya itu terus / tidak dapat diubah.
 define('PHI', 3.14);
-$r = 10;
+$r = 12;
 $luas = PHI * $r * $r;
 echo "<br>luas lingkaran : $luas";
 ?>
