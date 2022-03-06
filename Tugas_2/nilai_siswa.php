@@ -68,14 +68,6 @@
     </div>
 
     <?php
-        // $proses = isset($_POST['proses']) ? $_POST['proses'] : "";
-        // $nama_siswa = isset($_POST['nama']) ? $_POST['nama'] : "";
-        // $mata_kuliah = isset($_POST['matkul']) ? $_POST['matkul'] : "";
-        // $nilai_uts = isset($_POST['nilai_uts']) ? $_POST['nilai_uts'] : "";
-        // $nilai_uas = isset($_POST['nilai_uas']) ? $_POST['nilai_uas'] : "";
-        // $nilai_tugas = isset($_POST['nilai_tugas']) ? $_POST['nilai_tugas'] : "" ;
-
-        
         if (isset($_POST['proses'])){
             $proses = $_POST['proses'];
             $nama_siswa = $_POST['nama'];

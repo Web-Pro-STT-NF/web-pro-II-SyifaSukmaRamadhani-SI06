@@ -66,23 +66,21 @@
                                 echo "<br>Produk : $produk";
                                 echo "<br>Jumlah Beli : $jumlah";
 
-                                // $TV = 4200000;
-                                // $Kulkas = 3100000;
-                                // $MesinCuci = 3800000;
-
                                 $kulkas = 3100000 * intval($jumlah);
                                 $mesincuci = 3800000 * intval($jumlah);
                                 $TV1 = 4200000 * intval($jumlah);
-                            
-                                if($produk === 'KULKAS'){
-                                    
-                                    echo "<br>" . "Total Belanja : " . number_format($kulkas,0,',','.');
-                                }elseif($produk === 'TV'){
-                                    
-                                    echo "<br>" . "Total Belanja : " . number_format($TV1,0,',','.');
-                                }else{
-                                    
-                                    echo "<br>" . "Total Belanja : " . number_format($mesincuci,0,',','.');
+                                
+                                switch($produk){
+                                    case 'KULKAS':
+                                        echo "<br>" . "Total Belanja : " . number_format($kulkas,0,',','.');
+                                        break;
+                                    case 'TV':
+                                        echo "<br>" . "Total Belanja : " . number_format($TV1,0,',','.');
+                                        break;
+                                    default:
+                                        echo "<br>" . "Total Belanja : " . number_format($mesincuci,0,',','.');
+                                        break;
+
                                 }
                                 
                             }
