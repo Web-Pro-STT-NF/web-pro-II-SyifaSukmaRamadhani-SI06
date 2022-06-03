@@ -14,13 +14,13 @@
     <div class="card">
         <div class="card-header bg-primary text-white">Tambah Data Mahasiswa</div>
         <div class="card-body">
-            <form action="<?= base_url('mahasiswa/save'); ?>" method="POST">
+            <form action="<?= base_url('dosen/save'); ?>" method="POST">
                 <div class="form-group">
-                    <label for="nim">NIM</label>
-                    <input type="text" id="nim" name="nim" class="form-control">
+                    <label for="nidn">NIDN</label>
+                    <input type="text" id="nidn" name="nidn" class="form-control">
                 </div>
                 <div class="form-group mt-3">
-                    <label for="nama">Nama Mahasiswa</label>
+                    <label for="nama">Nama Dosen</label>
                     <input type="text" id="nama" name="nama" class="form-control">
                 </div>
                 <div class="form-group mt-3">
@@ -32,20 +32,16 @@
                     </select>
                 </div>
                 <div class="form-group mt-3">
-                    <label for="tgl_lahir">Tanggal Lahir</label>
-                    <input type="date" id="tgl_lahir" name="tgl_lahir" class="form-control">
-                </div>
-                <div class="form-group mt-3">
-                    <label for="tempat_lahir">Tempat Lahir</label>
-                    <input type="text" id="tempat_lahir" name="tempat_lahir" class="form-control">
+                    <label for="pendidikan">Pendidikan</label>
+                    <input type="text" id="pendidikan" name="pendidikan" class="form-control">
                 </div>
                 <div class="form-group mt-3">
                     <label for="program_study">Program Study</label>
                     <input type="text" id="program_study" name="program_study" class="form-control">
                 </div>
                 <div class="form-group mt-3">
-                    <label for="ipk">IPK</label>
-                    <input type="text" id="ipk" name="ipk" class="form-control">
+                    <label for="matakuliah">Mata Kuliah</label>
+                    <input type="text" id="matakuliah" name="matakuliah" class="form-control">
                 </div>
                 <button type="submit" class="btn btn-primary mt-3">Simpan</button>
             </form>
